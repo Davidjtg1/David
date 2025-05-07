@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe's salon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f3f4f6;
+      color: #1f2937;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 0 1rem 2rem;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    .contact p {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0.25rem 0;
+    }
+    button {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.75rem;
+      background-color: #1f2937;
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    footer {
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Joe's Salon</h1>
+    <p>Where tradition meets style</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Haircuts</li>
+        <li>Beard Trims</li>
+        <li>Hot Towel Shaves</li>
+        <li>Kids Cuts</li>
+        <li>Styling & Products</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Hours</h2>
+      <p>Mon - Fri: 9 AM - 7 PM</p>
+      <p>Saturday: 9 AM - 5 PM</p>
+      <p>Sunday: Closed</p>
+    </div>
+
+    <div class="card contact">
+      <h2>Contact Us</h2>
+      <p>📞 (555) 123-4567</p>
+      <p>📍 123 Main Street, Barberville</p>
+      <button>Book an Appointment</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Joe's Salon. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
